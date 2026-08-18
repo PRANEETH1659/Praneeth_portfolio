@@ -1,0 +1,51 @@
+# Praneeth Ginjupalli — Portfolio
+
+Personal portfolio site built with React, Vite and Tailwind CSS v4, featuring a
+dark/light theme, an animated starfield background, and a responsive layout.
+
+**Live:** _(add the Vercel URL once deployed)_
+
+## Featured projects
+
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [Autonomous Financial Research Agent](https://github.com/PRANEETH1659/autonomous_financial_agent) | A LangChain ReAct agent that pulls live market data, searches and scrapes the web, and answers questions about uploaded financial PDFs via BM25 retrieval | Python, LangChain, Groq (Llama 3.3), Firecrawl, Streamlit |
+| [SupportDesk AI](https://github.com/PRANEETH1659/SupportDeskAI) | A full-stack support-ticket platform with real-time agent dashboards, role-based access, and a Gemini-backed assistant with voice I/O | React, Node/Express, MongoDB, Socket.io, Gemini API |
+
+## Tech stack
+
+- **React 19** + **Vite 7**
+- **Tailwind CSS v4** — theming via CSS custom properties in `src/index.css`
+- **lucide-react** for icons, **Radix UI** toast primitives
+- **react-router-dom** for routing
+
+## Running locally
+
+```bash
+npm install
+npm run dev      # http://localhost:5173
+```
+
+```bash
+npm run build    # production build to dist/
+npm run preview  # serve the production build
+npm run lint     # eslint
+```
+
+## Project layout
+
+```
+src/
+├── components/       # Navbar, Hero, About, Skills, Projects, Contact, Footer
+│   └── ui/           # toast primitives
+├── pages/            # Home, NotFound
+├── assets/           # project screenshots
+├── hooks/            # use-toast
+└── index.css         # Tailwind theme tokens + custom utilities
+```
+
+## Theming
+
+Colours are defined as HSL triples on `:root` and `.dark` in `src/index.css`,
+then registered with Tailwind through the `@theme` block. To adjust the palette,
+edit the custom properties — every component picks the change up automatically.
