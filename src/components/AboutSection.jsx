@@ -1,11 +1,4 @@
-import {
-  BrainCircuit,
-  Briefcase,
-  Code,
-  Crop,
-  MonitorSmartphone,
-  User,
-} from "lucide-react";
+import { Bot, BrainCircuit, Layers } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -54,15 +47,16 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4 ">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-white" />
+                  <Bot className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Developlment</h4>
+                  <h4 className="font-semibold text-lg">Agentic AI</h4>
 
                   <p className="text-muted-foreground">
-                    Creating responsive Websites and web applications with
-                    modern frameworks.
+                    Creating projects powered by agentic AI — systems that plan
+                    their own steps, pick their own tools, and act on what comes
+                    back.
                   </p>
                 </div>
               </div>
@@ -71,16 +65,16 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4 ">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <BrainCircuit className="h-6 w-6 text-white" />
+                  <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Problem Solving Area{" "}
+                    Full Stack, With a Chatbot In It
                   </h4>
 
-                  <p className="text-muted-foreground ">
-                    Debugging DSA puzzles to refine my backend instincts and
-                    Solving Skills.
+                  <p className="text-muted-foreground">
+                    Building complete web applications end to end — auth, data,
+                    real-time updates — with an AI chat assistant built in.
                   </p>
                 </div>
               </div>
@@ -89,14 +83,14 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4 ">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Crop className="h-6 w-6 text-white" />
+                  <BrainCircuit className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Designing</h4>
+                  <h4 className="font-semibold text-lg">Problem Solving</h4>
 
                   <p className="text-muted-foreground">
-                    Crafting visual experiences that speak to both logic and
-                    emotion.
+                    Working through DSA problems to sharpen the instincts that
+                    show up in backend design.
                   </p>
                 </div>
               </div>

@@ -3,7 +3,7 @@
 Personal portfolio site built with React, Vite and Tailwind CSS v4, featuring a
 dark/light theme, an animated starfield background, and a responsive layout.
 
-**Live:** _(add the Vercel URL once deployed)_
+**Live:** https://praneeth-portfolio-sooty.vercel.app
 
 ## Featured projects
 
