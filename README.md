@@ -9,6 +9,7 @@ learning models trained in PyTorch. Built with React, Vite and Tailwind CSS v4.
 
 | Project | What it is | Stack |
 | --- | --- | --- |
+| [SentinelCopilot](https://github.com/PRANEETH1659/Sentinel-Copilot-) *(in progress)* | A fully local AI security copilot: a LangGraph agent that chooses between a runbook knowledge base (hybrid BM25 + vector search, RRF) and a live alert stream fed by Redpanda, with Redis + semantic caching and audit logging | Python, LangGraph, FastAPI, Elasticsearch, Ollama, Redpanda, Redis, Docker |
 | [Autonomous Financial Research Agent](https://github.com/PRANEETH1659/autonomous_financial_agent) | A LangChain ReAct agent that pulls live market data, searches and scrapes the web, and answers questions about uploaded financial PDFs via BM25 retrieval | Python, LangChain, Groq (Llama 3.3), Firecrawl, Streamlit |
 | [SupportDesk AI](https://github.com/PRANEETH1659/SupportDeskAI) | A full-stack support-ticket platform with real-time agent dashboards, role-based access, and a Gemini-backed assistant with voice I/O | React, Node/Express, MongoDB, Socket.io, Gemini API |
 | DeepTrace *(in progress)* | A deepfake detector that starts as a ResNet18 fine-tuned to tell real faces from StyleGAN fakes, growing into video, voice, and an agent that explains its verdict | Python, PyTorch, ResNet18, Computer Vision |

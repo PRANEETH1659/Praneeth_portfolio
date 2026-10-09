@@ -8,6 +8,30 @@ import supportDeskImg from "../assets/supportdesk-ai.png";
 const projects = [
   {
     id: 1,
+    title: "SentinelCopilot — Local AI Security Copilot",
+    description:
+      "An AI teammate for security analysts that runs 100% on your own machine. Ask about an incident and a LangGraph agent decides where to look — the runbook library or the live alert stream — then answers only from what it found, with sources. No security data ever leaves the box.",
+    highlights: [
+      "Agent picks its own tool: knowledge base or live alerts",
+      "Hybrid search — BM25 + vectors, fused with RRF",
+      "Live alert stream · semantic cache · full audit trail",
+    ],
+    image: null,
+    tags: [
+      "Python",
+      "LangGraph",
+      "FastAPI",
+      "Elasticsearch",
+      "Ollama",
+      "Redpanda (Kafka)",
+      "Redis",
+      "Docker",
+    ],
+    githubUrl: "https://github.com/PRANEETH1659/Sentinel-Copilot-",
+    status: "Phase 5 in progress",
+  },
+  {
+    id: 2,
     title: "Autonomous Financial Research Agent",
     description:
       "A LangChain ReAct agent that decides its own next move: pull live market data, search the web, or run a full research pipeline — search, scrape, chunk, and BM25-retrieve — then synthesise a grounded answer. Also answers questions about an uploaded 10-K or earnings PDF.",
@@ -31,7 +55,7 @@ const projects = [
     githubUrl: "https://github.com/PRANEETH1659/autonomous_financial_agent",
   },
   {
-    id: 2,
+    id: 3,
     title: "SupportDesk AI",
     description:
       "A full-stack support platform where customers raise tickets — by typing, speaking, or attaching screenshots — and agents work them from a dashboard that updates live over WebSockets. A Gemini-backed assistant handles the questions that never needed a human.",
@@ -55,7 +79,7 @@ const projects = [
     githubUrl: "https://github.com/PRANEETH1659/SupportDeskAI",
   },
   {
-    id: 3,
+    id: 4,
     title: "DeepTrace — Real vs. AI Face Detector",
     description:
       "Real face or AI fake? DeepTrace learns the pixel-level tells the human eye misses. A ResNet18 fine-tuned in PyTorch on 140k real and StyleGAN-generated faces — stage one of a deepfake detector that grows into video, cloned voices, and an agent that explains its verdict.",
@@ -97,9 +121,9 @@ export const ProjectsSection = () => {
         </h1>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Three projects, one thread: AI that does real work — an autonomous
-          research agent, a deep learning model I train myself, and a support
-          platform with an AI assistant built in.
+          Four projects, one thread: AI that does real work — a security
+          copilot agent, an autonomous research agent, a deep learning model I
+          train myself, and a support platform with an AI assistant built in.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
