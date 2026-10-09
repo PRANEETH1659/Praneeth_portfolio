@@ -1,4 +1,4 @@
-import { Bot, BrainCircuit, Layers } from "lucide-react";
+import { Bot, BrainCircuit, ScanEye } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -11,18 +11,19 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold ">
-              Passionate Web Developer & Tech Explorer{" "}
+              AI Engineer — Agents, Models &amp; the Hard Parts
             </h3>
 
             <p className="text-muted-foreground">
-              Building web applications that are sleek, accessible, and
-              optimized for performance.
+              I build AI systems that do real work: agents that plan their own
+              steps and call the right tools, and deep learning models I train
+              from the data up.
             </p>
 
             <p className="text-muted-foreground">
-              I am passionate about creating elegant solutions to complex
-              problems, and I'm constantly leraning new tech and techniques to
-              stay at the forefront over the ever-evolving web landscape
+              B.Tech CSE at VIT-AP (2027). I go after the parts tutorials skip —
+              evaluating agents honestly, and testing whether a model still
+              holds up on data it has never seen.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -54,9 +55,9 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg">Agentic AI</h4>
 
                   <p className="text-muted-foreground">
-                    Creating projects powered by agentic AI — systems that plan
-                    their own steps, pick their own tools, and act on what comes
-                    back.
+                    Systems that plan their own steps, pick their own tools, and
+                    act on what comes back — backed by real evals, not a demo
+                    that worked once.
                   </p>
                 </div>
               </div>
@@ -65,16 +66,17 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4 ">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Layers className="h-6 w-6 text-primary" />
+                  <ScanEye className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Full Stack, With a Chatbot In It
+                    Deep Learning &amp; Computer Vision
                   </h4>
 
                   <p className="text-muted-foreground">
-                    Building complete web applications end to end — auth, data,
-                    real-time updates — with an AI chat assistant built in.
+                    Training my own models in PyTorch — starting with a detector
+                    that catches AI-generated faces, growing into video and
+                    voice deepfakes.
                   </p>
                 </div>
               </div>
@@ -86,11 +88,11 @@ export const AboutSection = () => {
                   <BrainCircuit className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Problem Solving</h4>
+                  <h4 className="font-semibold text-lg">LLMs &amp; RAG</h4>
 
                   <p className="text-muted-foreground">
-                    Working through DSA problems to sharpen the instincts that
-                    show up in backend design.
+                    Grounding LLMs in real data — retrieval, chunking, and tight
+                    prompts that keep answers accurate, fast, and cheap.
                   </p>
                 </div>
               </div>

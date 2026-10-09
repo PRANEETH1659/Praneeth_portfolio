@@ -6,7 +6,7 @@ export const Footer = () => {
       {" "}
       <p className="text-sm text-muted-foreground">
             {" "}
-        &copy: {new Date().getFullYear()} Praneeth G,All rights reserved.</p>
+        &copy; {new Date().getFullYear()} Praneeth Ginjupalli · Building AI that does real work.</p>
 
     <a href="#home" className="p-2 rounded-full ml-5 bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
         <ArrowUp size={20}/>

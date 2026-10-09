@@ -1,7 +1,7 @@
 # Praneeth Ginjupalli — Portfolio
 
-Personal portfolio site built with React, Vite and Tailwind CSS v4, featuring a
-dark/light theme, an animated starfield background, and a responsive layout.
+Portfolio of an AI / ML engineer — agentic AI systems, RAG pipelines, and deep
+learning models trained in PyTorch. Built with React, Vite and Tailwind CSS v4.
 
 **Live:** https://praneeth-portfolio-sooty.vercel.app
 
@@ -11,6 +11,7 @@ dark/light theme, an animated starfield background, and a responsive layout.
 | --- | --- | --- |
 | [Autonomous Financial Research Agent](https://github.com/PRANEETH1659/autonomous_financial_agent) | A LangChain ReAct agent that pulls live market data, searches and scrapes the web, and answers questions about uploaded financial PDFs via BM25 retrieval | Python, LangChain, Groq (Llama 3.3), Firecrawl, Streamlit |
 | [SupportDesk AI](https://github.com/PRANEETH1659/SupportDeskAI) | A full-stack support-ticket platform with real-time agent dashboards, role-based access, and a Gemini-backed assistant with voice I/O | React, Node/Express, MongoDB, Socket.io, Gemini API |
+| DeepTrace *(in progress)* | A deepfake detector that starts as a ResNet18 fine-tuned to tell real faces from StyleGAN fakes, growing into video, voice, and an agent that explains its verdict | Python, PyTorch, ResNet18, Computer Vision |
 
 ## Tech stack
 

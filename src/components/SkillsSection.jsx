@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Bot, Layers, Layout, Server, Sparkles, Wrench } from "lucide-react";
+import { Bot, BrainCircuit, CodeXml, Rocket, ScanEye, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /* Depth, not percentages. Three tiers say something a number can't defend:
@@ -20,37 +20,37 @@ const TIERS = {
    far enough apart to stay tellable apart at ring size. */
 const branches = [
   {
-    id: "frontend",
-    label: "Frontend",
-    icon: Layout,
+    id: "foundations",
+    label: "Foundations",
+    icon: CodeXml,
     hue: "190 85% 58%",
     skills: [
-      { name: "React", tier: "strong" },
-      { name: "JavaScript", tier: "core" },
-      { name: "Tailwind CSS", tier: "strong" },
+      { name: "Python", tier: "core" },
+      { name: "DSA", tier: "strong" },
+      { name: "ML / DL Theory", tier: "strong" },
     ],
   },
   {
-    id: "backend",
-    label: "Backend",
-    icon: Server,
+    id: "deep-learning",
+    label: "Deep Learning",
+    icon: ScanEye,
     hue: "222 80% 66%",
     skills: [
-      { name: "Node.js", tier: "strong" },
-      { name: "Express", tier: "working" },
-      { name: "MongoDB", tier: "working" },
+      { name: "PyTorch", tier: "working" },
+      { name: "Transfer Learning", tier: "working" },
+      { name: "Computer Vision", tier: "working" },
     ],
   },
   {
-    id: "ai-engineering",
-    label: "AI Engineering",
+    id: "llms-agents",
+    label: "LLMs & Agents",
     icon: Bot,
     hue: "258 70% 68%",
     skills: [
-      { name: "Python", tier: "core" },
       { name: "Agentic AI", tier: "strong" },
       { name: "RAG Pipelines", tier: "strong" },
       { name: "LangChain", tier: "working" },
+      { name: "Agent Evals", tier: "working" },
     ],
   },
   {
@@ -65,14 +65,14 @@ const branches = [
     ],
   },
   {
-    id: "tooling",
-    label: "Tooling",
-    icon: Wrench,
+    id: "shipping",
+    label: "Ship & Deploy",
+    icon: Rocket,
     hue: "160 60% 52%",
     skills: [
+      { name: "Streamlit", tier: "strong" },
+      { name: "Kaggle / GPU", tier: "working" },
       { name: "Git & GitHub", tier: "working" },
-      { name: "Postman", tier: "working" },
-      { name: "Vite", tier: "working" },
     ],
   },
 ];
@@ -209,7 +209,7 @@ const Branch = ({ branch, index, total, revealed }) => {
   );
 };
 
-/* Tells the reader how to decode a ring before they meet twenty of them. */
+/* Tells the reader how to decode a ring before they meet sixteen of them. */
 const TierLegend = () => (
   <ul className="mb-16 flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
     {Object.entries(TIERS).map(([key, tier]) => {
@@ -301,8 +301,8 @@ export const SkillsSection = () => {
         </h2>
 
         <p className="mx-auto mb-8 max-w-2xl text-center text-muted-foreground">
-          One stack, five limbs — what I build with, what I build, and what I
-          build alongside.
+          One root, five limbs — from the fundamentals, to the models I train,
+          to the agents I ship.
         </p>
 
         <TierLegend />
@@ -315,11 +315,11 @@ export const SkillsSection = () => {
                 aria-hidden="true"
                 className="absolute inset-0 rounded-full border border-primary/20 animate-pulse-subtle"
               />
-              <Layers className="size-9 text-primary" />
+              <BrainCircuit className="size-9 text-primary" />
             </div>
 
             <p className="mt-4 text-lg font-bold tracking-wide text-glow">
-              Full Stack
+              AI Engineering
             </p>
           </div>
 

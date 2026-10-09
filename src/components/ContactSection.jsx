@@ -92,8 +92,8 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Hiring for AI / ML or agentic AI roles, or have an AI idea worth
+          building? Let's talk.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

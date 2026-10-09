@@ -97,9 +97,9 @@ export const ProjectsSection = () => {
         </h1>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Three things I build — an agentic AI system, a deep learning model I
-          train myself, and a production-shaped full-stack app. Live demos and
-          source are a click away.
+          Three projects, one thread: AI that does real work — an autonomous
+          research agent, a deep learning model I train myself, and a support
+          platform with an AI assistant built in.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

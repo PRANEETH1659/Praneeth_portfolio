@@ -7,18 +7,22 @@ export const HeroSection=()=>{
 
             <div className="space-y-6">
 
+                <p className="text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-primary opacity-0 animate-fade-in">
+                    AI / ML Engineer
+                </p>
+
                 <h1 className="text-4xl md:text-6xl font-bold tracking-light ">
                     <span className="opacity-0 animate-fade-in">Hi, I'm </span>
                     <span className="text-primary opacity-0 animate-fade-in-delay-1">{" "}Praneeth</span>
                     <span className="text-gradient ml-2  opacity-0 animate-fade-in-delay-2">{""}Ginjupalli</span>
                 </h1>
 
-                <p className="text-2xl md:text-2xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Creating web experiences that are clean, fast, and seriously good-looking.
+                <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+                    I build AI that thinks, sees, and acts — agents that choose their own tools, and deep learning models I train myself.
                 </p>
 
                 <div>
-                    <a href="#projects" className="cosmic-button opacity-0 animate-fade-in-delay-4 ">View MY Projects</a>
+                    <a href="#projects" className="cosmic-button opacity-0 animate-fade-in-delay-4 ">See What I've Built</a>
                 </div>
 
             </div>
