@@ -54,6 +54,28 @@ const projects = [
     demoUrl: "https://support-desk-ai-three.vercel.app/",
     githubUrl: "https://github.com/PRANEETH1659/SupportDeskAI",
   },
+  {
+    id: 3,
+    title: "DeepTrace — Real vs. AI Face Detector",
+    description:
+      "Real face or AI fake? DeepTrace learns the pixel-level tells the human eye misses. A ResNet18 fine-tuned in PyTorch on 140k real and StyleGAN-generated faces — stage one of a deepfake detector that grows into video, cloned voices, and an agent that explains its verdict.",
+    highlights: [
+      "A vision model I trained myself — not an API call",
+      "140k faces: real Flickr photos vs. StyleGAN fakes",
+      "Next: video, voice clones, lip-sync checks, LangGraph agent",
+    ],
+    image: null,
+    tags: [
+      "Python",
+      "PyTorch",
+      "ResNet18",
+      "Transfer Learning",
+      "Computer Vision",
+      "Kaggle GPU",
+    ],
+    status: "Building now",
+    /* Add demoUrl / githubUrl here once the repo and Hugging Face demo are live. */
+  },
 ];
 
 /* Shown until a real screenshot exists — keeps the card's proportions and the
@@ -75,9 +97,9 @@ export const ProjectsSection = () => {
         </h1>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Two projects I built end to end — one agentic AI system, one
-          production-shaped full-stack app. Both are live, and the source for
-          each is a click away.
+          Three things I build — an agentic AI system, a deep learning model I
+          train myself, and a production-shaped full-stack app. Live demos and
+          source are a click away.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -141,15 +163,24 @@ export const ProjectsSection = () => {
                     </a>
                   )}
 
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <Github size={18} />
-                    Source
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={18} />
+                      Source
+                    </a>
+                  )}
+
+                  {project.status && (
+                    <span className="flex items-center gap-2 text-sm text-primary">
+                      <span className="size-2 rounded-full bg-primary animate-pulse" />
+                      {project.status}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
