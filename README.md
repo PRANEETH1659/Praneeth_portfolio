@@ -13,6 +13,10 @@ learning models trained in PyTorch. Built with React, Vite and Tailwind CSS v4.
 | [SupportDesk AI](https://github.com/PRANEETH1659/SupportDeskAI) | A full-stack support-ticket platform with real-time agent dashboards, role-based access, and a Gemini-backed assistant with voice I/O | React, Node/Express, MongoDB, Socket.io, Gemini API |
 | DeepTrace *(in progress)* | A deepfake detector that starts as a ResNet18 fine-tuned to tell real faces from StyleGAN fakes, growing into video, voice, and an agent that explains its verdict | Python, PyTorch, ResNet18, Computer Vision |
 
+## Certifications
+
+- **Deep Learning with PyTorch: Image Segmentation** — Coursera Project Network, Oct 2026 · [Verify](https://coursera.org/verify/C3BHZQBN7MPE)
+
 ## Tech stack
 
 - **React 19** + **Vite 7**
@@ -37,7 +41,7 @@ npm run lint     # eslint
 
 ```
 src/
-├── components/       # Navbar, Hero, About, Skills, Projects, Contact, Footer
+├── components/       # Navbar, Hero, About, Skills, Projects, Certifications, Contact, Footer
 │   └── ui/           # toast primitives
 ├── pages/            # Home, NotFound
 ├── assets/           # project screenshots
