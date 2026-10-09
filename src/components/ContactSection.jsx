@@ -3,11 +3,10 @@ import { cn } from "@/lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
 
-/* Web3Forms delivers submissions straight to the inbox tied to this key.
-   The key is meant to live in client-side code — it can only ever post to the
-   address it was issued for, so it is safe to commit. Get one in ~30 seconds
-   at https://web3forms.com (no account needed) and paste it below. */
-const WEB3FORMS_ACCESS_KEY = "PASTE_YOUR_ACCESS_KEY_HERE";
+/* Web3Forms delivers submissions straight to gpraneeth2005@gmail.com.
+   This key is meant to live in client-side code — it can only ever post to the
+   address it was issued for, so it is safe to commit and safe to expose. */
+const WEB3FORMS_ACCESS_KEY = "15132eef-dea5-4036-a3f6-94027354302d";
 
 const EMPTY_FORM = { name: "", email: "", message: "" };
 
@@ -27,16 +26,6 @@ export const ContactSection = () => {
     // Silently accept and discard bot submissions, so they stop retrying.
     if (honeypot) {
       setForm(EMPTY_FORM);
-      return;
-    }
-
-    if (WEB3FORMS_ACCESS_KEY === "PASTE_YOUR_ACCESS_KEY_HERE") {
-      toast({
-        variant: "destructive",
-        title: "Form not connected yet",
-        description:
-          "This form needs a Web3Forms access key before it can deliver messages.",
-      });
       return;
     }
 
